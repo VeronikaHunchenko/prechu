@@ -1,0 +1,278 @@
+:root {
+  --base-body-background:                          var(--global-background);
+  --base-body-font-family:                         var(--global-font-family);
+  --base-body-font-weight:                         normal;
+  --base-body-font-size:                           var(--global-font-size);
+  --base-body-line-height:                         var(--global-line-height);
+  --base-body-color:                               var(--global-color);
+
+  --base-link-color:                               var(--global-link-color);
+  --base-link-text-decoration:                     none;
+  --base-link-hover-color:                         var(--global-link-hover-color);
+  --base-link-hover-text-decoration:               underline;
+
+  --base-strong-font-weight:                       bolder;
+  --base-p-font-size:                              14px;
+ 
+  --base-margin-vertical:                          var(--global-margin);
+
+  --base-heading-font-family:                      var(--global-font-family);
+  --base-heading-font-weight:                      normal;
+  --base-heading-color:                            #6f7173;
+  --base-heading-text-transform:                   none;
+  --base-heading-margin-top:                       var(--global-margin);
+  --base-h1-font-size:                             42px;
+  --base-h1-line-height:                           2;
+  --base-h2-font-size:                             26px;
+  --base-h2-line-height:                           1.7;
+  --base-h3-font-size:                             20px;
+  --base-h3-line-height:                           1.4;
+  --base-h4-font-size:                             1.25rem;
+  --base-h4-line-height:                           1.4;
+  --base-h5-font-size:                             1rem;
+  --base-h5-line-height:                           1.4;
+  --base-h6-font-size:                             0.875rem;
+  --base-h6-line-height:                           1.4;
+
+  --base-list-padding-left:                        30px;
+
+  --base-hr-margin-vertical:                       var(--global-margin);
+  --base-hr-border:                                var(--global-border-width) solid var(--global-border);
+
+  --base-blockquote-color:                         #333;
+  --base-blockquote-font-size:                     var(--global-font-size);
+  --base-blockquote-line-height:                   1.5;
+  --base-blockquote-font-style:                    italic;
+  --base-blockquote-margin-vertical:               var(--global-margin);
+  --base-blockquote-footer-color:                  #333;
+  --base-blockquote-footer-margin-top:             var(--global-margin);
+  --base-blockquote-footer-font-size:              var(--global-font-size);
+  --base-blockquote-footer-line-height:            1.5;
+
+  --base-selection-background:                     #39f;
+  --base-selection-color:                          var(--global-inverse-color);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--base-body-font-family);
+  font-size: var(--base-body-font-size);
+  font-weight: var(--base-body-font-weight);
+  line-height: var(--base-body-line-height);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--base-body-background);
+  color: var(--base-body-color);
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--base-link-color);
+  text-decoration: var(--base-link-text-decoration);
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+  outline: none;
+}
+
+a:hover {
+  color: var(--base-link-hover-color);
+  text-decoration: var(--base-link-hover-text-decoration);
+}
+
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+audio,
+canvas,
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+img:not([src]) {
+  visibility: hidden;
+}
+
+p,
+ul,
+ol,
+dl,
+pre,
+address,
+fieldset,
+figure {
+  margin: 0 0 var(--base-margin-vertical) 0;
+}
+
+
+*+ul,
+*+ol,
+*+dl,
+*+pre,
+*+address,
+*+fieldset,
+*+figure {
+  margin-top: var(--base-margin-vertical);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--base-heading-margin-top) 0;
+  font-family: var(--base-heading-font-family);
+  font-weight: var(--base-heading-font-weight);
+  color: var(--base-heading-color);
+  text-transform: var(--base-heading-text-transform);
+}
+
+*+h1,
+*+h2,
+*+h3,
+*+h4,
+*+h5,
+*+h6 {
+  margin-top: var(--base-margin-vertical);
+}
+
+h1, .h1 {
+  font-size: var(--base-h1-font-size);
+  line-height: var(--base-h1-line-height);
+}
+
+h2, .h2 {
+  font-size: var(--base-h2-font-size);
+  line-height: var(--base-h2-line-height);
+}
+
+h3, .h3 {
+  font-size: var(--base-h3-font-size);
+  line-height: var(--base-h3-line-height);
+}
+
+h4, .h4 {
+  font-size: var(--base-h4-font-size);
+  line-height: var(--base-h4-line-height);
+}
+
+h5, .h5 {
+  font-size: var(--base-h5-font-size);
+  line-height: var(--base-h5-line-height);
+}
+
+h6, .h6 {
+  font-size: var(--base-h6-font-size);
+  line-height: var(--base-h6-line-height);
+}
+
+ul,
+ol {
+  padding-left: var(--base-list-padding-left);
+}
+
+ul>li>ul,
+ul>li>ol,
+ol>li>ol,
+ol>li>ul {
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  text-align: inherit;
+  margin: 0 0 var(--base-margin-vertical) 0;
+  border: 0;
+  border-top: var(--base-hr-border);
+}
+
+*+hr {
+  margin-top: var(--base-margin-vertical);
+}
+
+
+
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+[hidden] {
+  display: none !important;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.icon-card > h3 {
+  color: var(--global-primary-color);
+  margin-bottom: 5px;
+}
+.icon-card > p {
+  font-size: var(--base-p-font-size);
+  line-height: 1.2;
+}

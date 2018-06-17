@@ -1,0 +1,167 @@
+:root {
+  --button-color: #fff;
+  --button-background: #5094f2;
+  --button-font-family: inherit;
+  --button-font-size: var(--global-font-size);
+  --button-font-weight: normal;
+  --button-padding: 8px 10px;
+  --button-height: var(--global-control-height);
+
+  --button-color-hover: #fff;
+  --button-background-hover: #216bd1;
+
+  --button-color-focus: #fff;
+  --button-background-focus: #216bd1;
+
+  --button-color-active: #fff;
+  --button-background-active: #216bd1;
+}
+
+
+button:not(class),
+input[type="button"],
+input[type="submit"],
+.button {
+  margin: 0;
+  min-width: 172px;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  user-select: none;
+  border-radius: 3px;
+  overflow: visible;
+  font: inherit;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  min-height: var(--button-height);
+  text-decoration: none;
+  background: var(--button-background);
+  color: var(--button-color);
+}
+
+.button:not(:disabled) {
+  cursor: pointer
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+.button:hover {
+  text-decoration: none;
+  background: var(--button-background-hover);
+  color: var(--button-color-hover);
+}
+
+.button:focus {
+  outline: none;
+  background: var(--button-background-focus);
+  color: var(--button-color-focus);
+}
+
+.button:active,
+.button.is-active {
+  background: var(--button-background-active);
+  color: var(--button-color-active);
+}
+
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}
+.fa {
+  color: var(--global-primary-color);
+  font-size: 9px;
+}
+.fa:hover {
+  color: var(--global-link-hover-color);
+}
+.button-icon > i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  margin-right: 11px;
+}
+.button > span:nth-child(2) {
+  font-size: 22px;
+  font-weight: 300;
+}
+.slick-arrow {
+  background: none;
+  min-width: 26px;
+  height: 63px;
+  background-repeat: no-repeat;
+}
+.slick-arrow:hover {
+  cursor: pointer;
+}
+.slick-prev {
+  background-image: url(../../images/prev.png);
+  position: absolute;
+  left: -5%;
+  top: 50%;
+}
+.slick-next {
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  background-image: url(../../images/next.png);
+}
+.burger-btn {
+  display: none;
+  width: 58px;
+  height: 44px;
+  background-color: var(--global-primary-color);
+  border-radius: 3px;
+}
+.burger-btn > i {
+  color: #fff;
+}
+
+@media screen and (max-width: 844px) {
+
+/* ==================================== */
+/*  Burger button */
+
+
+
+  /* =========================== */
+  /* hero */
+  .slick-arrow {
+    display: none;
+  }
+  button:not(class),
+  input[type="button"],
+  input[type="submit"],
+  .button {
+    margin: 0;
+    min-width: 230px;
+  }
+  .button-icon > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 22px;
+  }
+  .button > span:nth-child(2) {
+    font-size: 24px;
+  }
+
+
+}
