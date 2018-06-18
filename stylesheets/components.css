@@ -101,6 +101,9 @@
     .foreground-text > h2 {
         font-size: 20px;
     }
+    .foreground-img {
+        padding-right: 60px;
+    }
     .shopping-card > h1 {
         font-size: 30px;
     }
@@ -137,6 +140,8 @@
         display: grid;
         justify-items: end;
     }
+    /* ================================ */
+    /* Burger button */
     .burger-btn {
         display: block;
         background-color: var(--global-primary-color);
@@ -172,7 +177,6 @@
     }
     .nav-burger {
         display: none;
-      
     }
     .nav-burger.active {
         display: block;
@@ -196,6 +200,11 @@
     .foreground-text > h2 {
         font-size: 20px;
     }
+    .foreground-img {
+        margin-right: 65px;
+        max-width: 177px;
+        padding-right: 0;
+    }
 
     /* ================================ */
     /* Icon-card */
@@ -203,7 +212,8 @@
         width: 137px;
         height: 137px;
         margin-right: 20px;
-        padding: 50px;
+        flex-grow: 0;
+        flex-shrink: 0;
     }
     .icon-card {
         min-width: 190px;
@@ -214,12 +224,13 @@
         padding-bottom: 18px;
     }
     .icon-img {
-        min-width: 50px;
+        max-width: 50px;
     }
     .icon-title {
         margin-bottom: 10px;
         color: var(--global-primary-color);
-        font-size: 34px; 
+        font-size: 34px;
+        line-height: 1;
     }
     .icon-description {
         font-size: 18px;

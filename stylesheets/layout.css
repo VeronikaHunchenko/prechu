@@ -32,6 +32,10 @@
     align-items: center;
 }
 @media screen and (max-width: 844px) {
+    .container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .layout-card {
         display: flex;
         flex-direction: column;
