@@ -266,7 +266,6 @@ textarea {
 ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
 }
 .icon-card > h3 {
   color: var(--global-primary-color);

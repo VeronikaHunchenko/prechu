@@ -97,27 +97,27 @@ input[type="submit"],
   font-size: 22px;
   font-weight: 300;
 }
-.slick-arrow {
+.slider-arrow {
   background: none;
   min-width: 26px;
   height: 63px;
   background-repeat: no-repeat;
 }
-.slick-arrow:hover {
+.slider-arrow:hover {
   cursor: pointer;
 }
-.slick-prev {
+.slick-left {
   background-image: url(../../images/prev.png);
   position: absolute;
   left: -5%;
   top: 50%;
 }
-.slick-next {
-  position: absolute;
-  right: 3%;
-  top: 50%;
+.slick-right {
   background-image: url(../../images/next.png);
-}
+  position: absolute;
+  right: -7%;
+  top: 50%;
+ }
 .burger-btn {
   display: none;
   width: 58px;
@@ -138,7 +138,7 @@ input[type="submit"],
 
   /* =========================== */
   /* hero */
-  .slick-arrow {
+  .slider-arrow {
     display: none;
   }
   button:not(class),

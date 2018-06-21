@@ -1,23 +1,28 @@
+.header {
+    padding-top: 10px;
+}
 .logo {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    display: inline-block;
+    
 }
 .navbar-nav {
     display: flex;
     justify-content: flex-end;
-    align-items: baseline;
+    margin-bottom: 0;
 }
 .navbar-nav > li > a {
     margin-right: 35px;
     color: var(--global-muted-color);
     text-decoration: none;
-   
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75px;
+    padding: 10px;
+   }
 .navbar-nav > li > a:hover {
-    border-bottom: 3px solid var(--global-muted-color);
-    padding-bottom: 23px;
+    border-bottom: 3px solid var(--global-primary-color);
 }
-
 .hero {
     position: relative;
 } 
@@ -25,20 +30,30 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    min-height: calc(100vh - 200px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.hero-foreground {
     position: relative;
 }
-.triangle-background {
-    background-repeat: repeat-x;
-    background-position: bottom;
-    min-height: calc(100vh - 200px);
+.hero-background:before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/triangle.png);
+    height: 7px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 .foreground-img {
     margin-top: 10%;
     margin-bottom: 10%;
     padding-right: 100px;
 }
-.foreground-text > h1, h2 {
+.layout-item > h1, h2 {
     color: #fff;
     line-height: 1.5;
     font-weight: 300;
@@ -66,6 +81,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+
 }
 .icon-item-1 {
     background-color: #5094f2;
@@ -81,13 +98,14 @@
     flex-direction: column;
     align-items: center;
     text-align: center;    
-    min-width: 250px;
+    /*min-width: 250px;*/
     margin-right: 13.5%;
     padding-top: 71px;
     padding-bottom: 91px;
 }
 .content-card {
     padding-left: 83px;
+    padding-top: 80px;
 }
 .content-card > h2 {
     color: var(--global-color);
@@ -208,6 +226,13 @@
 
     /* ================================ */
     /* Icon-card */
+    .layout-card > .layout-item::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #cccccc;
+        left: 0;
+        right: 0;
+    }
     .icon {
         width: 137px;
         height: 137px;

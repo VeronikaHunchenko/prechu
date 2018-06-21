@@ -23,9 +23,9 @@
         
     
           <div class="layout-item">
-            <div class="logo">
+            <a class="logo">
               <img src="images/logo.png" alt="">
-            </div>
+            </a>
           </div>
     
           <div class="layout-item">
@@ -34,7 +34,7 @@
               
               <div class="layout layout-navbar">
                 <div class="burger-btn"><i class="fa fa-bars fa-1x"></i></div>
-                <div class="layout-item nav-burger">
+                <div class="nav-burger">
                   <ul class="navbar-nav">
                     <li>
                       <a href="#">Home</a>
@@ -59,40 +59,43 @@
 
     <main class="page-main">
       <section class="hero ">
-        <div class="hero-background" style="background-image: url(images/bgr.png)">
-          <div class="triangle-background" style="background-image: url(images/triangle.png)">
-            <div class="hero-foreground">
-              <div class="container">
-                <div class="layout layout-foreground">
-                  <div class="layout-item">
-                    <img src="images/phone.png" alt="" class="foreground-img">
-                  </div>
-                  <div class="layout-item">
-                    <div class="slider slider-hero">
-                      <div class="slider-item">
-                        <div class="layout layout-slider">
-                          <div class="carousel" id="carousel">
-                            <button class="slick-prev slick-arrow" type="button">
-      
-                            </button>
-                            <div class="foreground-text">
-                              <h1 class="slider-title">Lorem Ipsum is simply</h1>
-                              <h2 class="slider-description">dummy text of the </br> printing & typesetting </h2>
-                              <a href="#" class="button">
-                                  <span class="button-icon">
-                                    <i class="fa fa-check" aria-hidden="true"></i>
-                                  </span>
-          
-                                  <span>Sign up now</span>
-                              </a>
-                            </div>
-      
-                            
-                            <button class="slick-next slick-arrow" type="button">
-      
-                            </button>
-                          </div>
-      
+        <div class="hero-background" style="background-image: url(images/bgr.png)"></div>
+        
+        <div class="hero-foreground">
+          <div class="container">
+
+            <div class="layout layout-foreground">
+
+              <div class="layout-item">
+                <img src="images/phone.png" alt="" class="foreground-img">
+              </div>
+
+              <div class="layout-item">
+                <div class="slider slider-hero">
+                  
+                  <button class="slick-left slider-arrow" type="button">
+                  </button>
+                  <button class="slick-right slider-arrow" type="button">
+                  </button>
+
+                  <div class="slider-item">
+                    <div class="layout layout-slider">
+                      <div class="layout-item">
+                        <div class="slider-img">
+                          
+                        </div>
+                      </div>
+                      <div class="layout-item">
+                        <h1 class="slider-title">Lorem Ipsum is simply</h1>
+                        <h2 class="slider-description">dummy text of the </br> printing & typesetting </h2>
+                        <div class="slider-actions">
+                          <a href="#" class="button">
+                            <span class="button-icon">
+                              <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+
+                            <span>Sign up now</span>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -100,10 +103,7 @@
                 </div>
               </div>
             </div>
-      
-      
           </div>
-      
         </div>
       </section>
       <section class="card">
@@ -193,7 +193,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="index.js"></script>
+  <script src="index.js"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  
 </body>
 
 </html>
